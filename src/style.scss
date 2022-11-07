@@ -27,3 +27,14 @@ margin-left: 40rem;
     height: 50rem;
     width: 40rem;
  }
+
+ .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+    grid-gap: 1rem;
+ }
+/*  .cardimage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+ } */
