@@ -19,7 +19,7 @@ const CustomProvider = ({children}) =>{
     }
 
     return (
-        <CustomProvider value={valorDelContexto}>{children}</CustomProvider>
+        <Provider value={valorDelContexto}>{children}</Provider>
     )
 
 }
