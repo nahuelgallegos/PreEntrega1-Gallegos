@@ -12,11 +12,11 @@ function ColorSchemesExample() {
         <Container className='navbarr' >
         <Link to="/"><img className='logonavbar' src='/imagenes/logonavbar.jpg'  /></Link>
           <Nav className="me-auto navConteiner">
-         <Link className='navItems' to="/productos">Productos</Link>
-         <Link className='navItems' to="/productos/hoddies">Hoddies</Link>
-         <Link className='navItems' to="/productos/remeras">Remeras</Link>
-         <Link className='navItems' to="/productos/pantalones">Pantalones</Link>
-         <Link className='navItems' to="/productos/accesorios">Accesorios</Link>
+         <Link className='navItems navLink' to="/productos">Productos</Link>
+         <Link className='navItems navLink' to="/productos/hoddies">Hoddies</Link>
+         <Link className='navItems navLink' to="/productos/remeras">Remeras</Link>
+         <Link className='navItems navLink' to="/productos/pantalones">Pantalones</Link>
+         <Link className='navItems navLink' to="/productos/accesorios">Accesorios</Link>
           </Nav>
           <CartWidgets/>
         </Container>

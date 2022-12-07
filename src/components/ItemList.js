@@ -5,8 +5,7 @@ const ItemList = ({items}) => {
   return (
     <section className='products' >
       {items.map((item)=>{
-        return  <p>  <Products key={item.id} {...item} /> </p>
-      }
+        return  <p>  <Products key={item.id} {...item} /> </p>}
       )}
     </section>
   )

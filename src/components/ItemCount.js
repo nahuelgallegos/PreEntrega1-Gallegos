@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-const ItemCount = () => {
+const ItemCount = ({handleOnAdd, init}) => {
 
-    const [count , setCount] = useState(0);
+    const [count , setCount] = useState(init);
 
     const handleSumar = () => {
         setCount(count + 1);
@@ -11,11 +11,11 @@ const ItemCount = () => {
         setCount(count - 1);
     }
     const handleConfirmar = () => {
-        
+        handleOnAdd(count)
     }
 
   return (
-    <div>
+    <div className='btn-sumarrestar'>
        <button onClick={handleSumar} >+</button>
        <p>{count}</p>
        <button onClick={handleRestar}>-</button>

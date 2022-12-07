@@ -4,6 +4,7 @@ import Home from './Home';
 import Carrito from './Carrito';
 import ItemListConteiner from './ItemListConteiner';
 import ItemDetailConteiner from './ItemDetailConteiner';
+import FinalizarCompra from './FinalizarCompra';
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
         <Route path='/productos/:prenda' element={<ItemListConteiner/>}/>
         <Route path='/item/:id' element={<ItemDetailConteiner/>}/>
         <Route path='/carrito' element={<Carrito/>}/>
+        <Route path='/carrito/compra' element={<FinalizarCompra/>}/>
     </Routes>
 </main>
 

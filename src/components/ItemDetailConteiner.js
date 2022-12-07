@@ -1,7 +1,6 @@
 import React from 'react'
 import ItemDetail from './ItemDetail'
 import { useEffect, useState } from 'react'
-import { Utils } from './Utils'
 import { useParams } from 'react-router-dom'   
 import { collection,doc, getDoc } from 'firebase/firestore'
 import { db } from './Firebase'
@@ -18,8 +17,7 @@ const ItemDetailConteiner = () =>{
 
    consulta
       .then ((respuesta)=>{
-         setItems(respuesta)
-         console.log(respuesta)
+         setItems(respuesta.data())
       })
       .catch((error)=>{
          console.log(error)
@@ -27,7 +25,7 @@ const ItemDetailConteiner = () =>{
 
   } ,[id] )
 
-  return ( <div> {<ItemDetail items={item}/>}</div>)
+  return (<ItemDetail product={{id, ...item}}/>)
 }
 
 export default ItemDetailConteiner

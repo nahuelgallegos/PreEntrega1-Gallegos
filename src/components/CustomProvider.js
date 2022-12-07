@@ -1,21 +1,48 @@
-import { createContext, useState } from "react"
+import { createContext, useContext, useState } from "react"
+
 
 export const contexto = createContext()
 export const { Provider } = contexto
 
-const CustomProvider = ({children}) =>{
-    const [carrito, setCarrito] = useState([
-        {nombre: "buzo1" , categoria : "hoddies", id: "00" , precio: 12000 , cantidad: 10 ,img :"/imagenes/buzo1.jpeg" },
-        {nombre: "buzo2" , categoria : "hoddies", id: "01" , precio: 12000 , cantidad: 10 ,img :"/imagenes/buzo2.jpeg"},
-        {nombre: "buzo3" , categoria : "hoddies", id: "02" , precio: 12000 , cantidad: 10 ,img :"/imagenes/buzo3.jpeg"},
-    ])
-    const [total, setTotal] = useState(2) 
+export const useCarrito = () => {
+    return useContext(contexto)
+}
+
+export const CustomProvider = ({children}) =>{
+    const [carrito, setCarrito] = useState([])
+    const [total, setTotal] = useState(0) 
+    const [cantidadTotal, setcantidadTotal] = useState(0)
+
+    const vaciarCarrito = () => {
+        setCarrito([])
+        setTotal(0)
+        setcantidadTotal(0)
+    }
+
+    const agregarAlCarrito = (product, cantidad) => {
+        const inCart = carrito.find(prod=> prod.id === product.id)
+        if (inCart){
+            setCarrito(carrito.map((element) => {
+                if(element.id === inCart.id) {
+                    return {...inCart, cantidad: inCart.cantidad + cantidad}
+                }else return element
+            }))
+        }
+        else{
+            setCarrito([...carrito, {...product,cantidad}])
+
+        } 
+        setTotal(total + product.price * cantidad)
+        setcantidadTotal(cantidadTotal + cantidad)
+    }
+
     
     const valorDelContexto = {
         productos : carrito,
         cantidad : total,
-        setCarrito : setCarrito,
-        setTotal : setTotal
+        cantidadTotal: cantidadTotal,
+        vaciarCarrito : vaciarCarrito,
+        agregarAlCarrito : agregarAlCarrito
     }
 
     return (
@@ -24,5 +51,5 @@ const CustomProvider = ({children}) =>{
 
 }
 
-export default (CustomProvider , contexto) 
+
     

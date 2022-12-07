@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { db } from './Firebase'
 import ItemList from "./ItemList"
-import { Utils } from './Utils'
 
 const ItemListConteiner = () => {
 
@@ -20,7 +19,6 @@ const ItemListConteiner = () => {
             .then ((respuesta)=>{
                 const products = respuesta.docs.map(doc => ({...doc.data(), id: doc.id}) )
                setItems(products)
-               console.log(products)
             })
             .catch((error)=>{
                console.log(error)
@@ -34,7 +32,6 @@ const ItemListConteiner = () => {
             .then ((respuesta)=>{
                 const products = respuesta.docs.map(doc => ({...doc.data(), id: doc.id}) )
                setItems(products)
-               console.log(products)
             })
             .catch((error)=>{
                console.log(error)
