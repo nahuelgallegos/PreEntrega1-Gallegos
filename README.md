@@ -43,6 +43,7 @@ Descripcion de para que se usaron las librerias:
 
 ### Deploy de la tienda:
 
+https://proyecto-final-react-js-lac.vercel.app/
 
 
 
