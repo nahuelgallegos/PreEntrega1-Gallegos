@@ -47,13 +47,13 @@ const FinalizarCompra = () => {
         <div className='contenedor'>
             {id ? <h1>Orden generada con exito, su id es {id}</h1> :    
             <div className='formulario-container'>
-            <h2>Ingresa tus datos para realizar la compra</h2>
+            <h2  className='formulario-input'  >Ingresa tus datos para realizar la compra</h2>
             
-            <form onSubmit={submitFunction} className='formulario-compra'>
-                <p>Ingresa tus datos</p>
-                <input ref={nameUser} type="text" placeholder='name' className='input-form' required />
-                <input ref= {emailUser} type="email" placeholder='pluggest_arg@gmail.com'  required/>
-                <input ref={telefonoUser} type="number" placeholder='1154068422' required/>
+            <form onSubmit={submitFunction} className='formulario'>
+                <p  className='formulario-input'  >Ingresa tus datos</p>
+                <input ref={nameUser} type="text" placeholder='name' required className='formulario-input'  />
+                <input ref= {emailUser} type="email" placeholder='pluggest_arg@gmail.com'  required className='formulario-input' />
+                <input ref={telefonoUser} type="number" placeholder='1154068422' required className='formulario-input' />
                 <button className='btn-vaciado'>Cargar orden</button>
             </form>
             </div>}

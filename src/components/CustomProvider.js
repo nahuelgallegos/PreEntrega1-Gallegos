@@ -3,7 +3,6 @@ import { createContext, useContext, useState } from "react"
 
 export const contexto = createContext()
 export const { Provider } = contexto
-
 export const useCarrito = () => {
     return useContext(contexto)
 }
@@ -34,6 +33,7 @@ export const CustomProvider = ({children}) =>{
         } 
         setTotal(total + product.price * cantidad)
         setcantidadTotal(cantidadTotal + cantidad)
+        console.log(setTotal())
     }
 
     

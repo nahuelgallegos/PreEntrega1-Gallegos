@@ -8,37 +8,31 @@ function GroupExample() {
         <Card.Img variant="top" src="/imagenes/buzo6.jpeg" />
         <Card.Body>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+          Corte y diseño OVERSIZED EXTRA , esta hoodie provee el ajuste extra holgado en las mangas, hombros y pecho del usuario, aportando un aspecto relajado y sutil urbano, ideal para combinar con shorts, mallas o pantalones.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
       <Card>
         <Card.Img variant="top" src="/imagenes/remera2adelante.jpeg" />
         <Card.Body>
           <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
+          Corte y diseño OVERSIZED, esta camiseta provee el ajuste extra holgado en las mangas, hombros y pecho del usuario, aportando un aspecto relajado y sutil urbano.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
       <Card>
         <Card.Img variant="top" src="/imagenes/buzo2.jpeg" />
         <Card.Body>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
+          Corte y diseño OVERSIZED EXTRA , esta hoodie provee el ajuste extra holgado en las mangas, hombros y pecho del usuario, aportando un aspecto relajado y sutil urbano, ideal para combinar con shorts, mallas o pantalones.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+
         </Card.Footer>
       </Card>
     </CardGroup>

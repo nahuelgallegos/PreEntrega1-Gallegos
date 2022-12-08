@@ -43,5 +43,39 @@ margin-left: 40rem;
  .navLink {
     color: white;
     text-decoration: none;
+    &:hover {
+        color:rgb(119, 117, 117);
+      }
  }
 
+ .cards {
+    margin-top: 3rem;
+ }
+
+ .videoprincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+ }
+
+
+ .carrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+ .formularioinput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }

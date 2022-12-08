@@ -25,11 +25,12 @@ Durante el largo de la cursada en la academia CoderHouse, fui aprendiendo los co
     "web-vitals": "^2.1.4"
 
 Descripcion de para que se usaron las librerias:
-* Fortawesome : Se utilizo con el fin de poder tener un icono de carrito
-* Bootstrap : Se utilizo para maquetar 
-* React-bootstrap : Se utilizo para maquetar el header/navbar
-* React-router-dom : Se utilizo para la navegabilidad de la aplicacion
+* Fortawesome : Se utilizo con el fin de poder tener un icono de carrito.
+* Bootstrap : Se utilizo para maquetar. 
+* React-bootstrap : Se utilizo para maquetar el header/navbar y las cards.
+* React-router-dom : Se utilizo para la navegabilidad de la aplicacion.
 * Firebase: Se utilizo para alojar los productos y las ordenes de compras efectuadas por el usuario. 
+* Sass : Se utilizo para darle estilos a la pagina.
 
 
 ### Instalacion

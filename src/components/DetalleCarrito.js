@@ -13,7 +13,7 @@ const DetalleCarrito = () => {
         <div className='contenedor-carrito'>
             {carrito.map((product)=>{
                 return (
-                    <Card style={{ width: '18rem' }}>
+                    <Card className='carrito' border="dark" style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={product.image} />
                     <Card.Body>
                       <Card.Title> {product.cantidad} {product.title} </Card.Title>

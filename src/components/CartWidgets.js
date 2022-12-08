@@ -9,7 +9,7 @@ const CartWidgets = () => {
         <Link to="/carrito">
         <div style={{color: "white"}}  >
             <FontAwesomeIcon icon={faCartShopping}/>
-            <span className='nav_Link' >{valorContexto.cantidadTotal}</span>
+            <span>{valorContexto.cantidadTotal}</span>
         </div>
         </ Link>
     )
